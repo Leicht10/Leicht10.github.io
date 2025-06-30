@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alisher (Leicht10) – Cybersecurity Student</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Light/Dark mode toggle
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    }
+    window.onload = () => {
+      if (localStorage.theme === 'dark') document.documentElement.classList.add('dark');
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="profile.jpg" alt="Alisher profile" class="profile-img" />
+      <h1>Alisher (Leicht10)</h1>
+      <p class="bio">Cybersecurity student from Uzbekistan passionate about blue team defense, Python scripting, and ethical hacking.</p>
+      <button onclick="toggleTheme()">🌗 Toggle Theme</button>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#writeups">Writeups</a>
+        <a href="#skills">Certs & Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Projects -->
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Firewall Simulator</h3>
+        <p>Blocks random IPs using rule dictionaries and simulates traffic flows. Built in Python.</p>
+        <a href="https://github.com/Leicht10/firewall-simulator" target="_blank">GitHub Repo</a>
+        <img src="firewall.png" alt="Firewall simulator screenshot" />
+      </div>
+      <div class="card">
+        <h3>Netbook Boot Notifier</h3>
+        <p>Sends IP + username to Telegram on system boot. Tools: Python, Telegram Bot API.</p>
+        <a href="https://github.com/Leicht10/netbook-boot-notifier" target="_blank">GitHub Repo</a>
+        <img src="notifier.png" alt="Notifier screenshot" />
+      </div>
+      <div class="card">
+        <h3>Local Password Manager</h3>
+        <p>Offline manager with encrypted master password storage. Python + file I/O + encryption.</p>
+        <a href="https://github.com/Leicht10/password-manager" target="_blank">GitHub Repo</a>
+        <img src="password-manager.png" alt="Password manager UI" />
+      </div>
+    </section>
+
+    <!-- Writeups -->
+    <section id="writeups" class="container">
+      <h2>Writeups & Learning</h2>
+      <article class="card">
+        <h3>TryHackMe: Pre‑Security</h3>
+        <p>Learned Linux basics, Bash commands, fundamental networking — strong foundation for further labs.</p>
+      </article>
+      <article class="card">
+        <h3>TryHackMe: Cybersecurity 101</h3>
+        <p>Explored threat models, blue team concepts, detection strategies. 🛡️ Ongoing reflections included.</p>
+      </article>
+    </section>
+
+    <!-- Certs & Skills -->
+    <section id="skills" class="container">
+      <h2>Certifications & Skills</h2>
+      <ul class="skills-list">
+        <li>✅ Cisco: Intro to Cybersecurity, Networking Basics, Cyber Threat Management</li>
+        <li>⚙️ TryHackMe: Pre-Security (✔️), Cybersecurity 101 (➜ in progress), SOC 1 (➜ in progress)</li>
+        <li>🐍 Python scripting, file I/O, CLI tools</li>
+        <li>🔐 Blue team, SIEM/log analysis, incident response, Linux basics</li>
+        <li>📄 CompTIA Security+ (planned)</li>
+      </ul>
+      <a href="https://www.credly.com/badges/ea30041f-d176-457d-84ce-981b1b88de52/public_url" target="_blank">View Cisco Credly Badge</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/Leicht10" target="_blank">Leicht10</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/alisher-a-a0ab53360/" target="_blank">Alisher A.</a></li>
+        <li>TryHackMe: <a href="https://tryhackme.com/p/Leicht10" target="_blank">Leicht10</a></li>
+      </ul>
+      <p><em>Resume section ready — upload PDF and link here when available.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Alisher • <a href="#top">Top</a></p>
+  </footer>
+</body>
+</html>
+
