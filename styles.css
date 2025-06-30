@@ -1,87 +1,101 @@
 :root {
-  --bg: #f5f5f5;
-  --fg: #111;
-  --card-bg: #fff;
-  --primary: #0066cc;
+  --bg: #fdf6e3;
+  --fg: #2e2e2e;
+  --card-bg: #fffaf0;
+  --primary: #886f4c;
+  --link-hover: #aa8855;
 }
 .dark {
-  --bg: #111;
-  --fg: #f5f5f5;
-  --card-bg: #1e1e1e;
-  --primary: #3399ff;
+  --bg: #1e1a16;
+  --fg: #eee8d5;
+  --card-bg: #2e2b26;
+  --primary: #d3b787;
+  --link-hover: #f0c987;
 }
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--fg);
   line-height: 1.6;
 }
 .container {
-  width: 90%;
-  max-width: 800px;
+  width: 95%;
+  max-width: 1000px;
   margin: 2rem auto;
 }
 header {
-  text-align: center;
-  padding: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--primary);
 }
 .profile-img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  border: 2px solid var(--primary);
   object-fit: cover;
-  border: 3px solid var(--primary);
+}
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+.bio {
+  margin-top: 0.3rem;
+}
+nav {
+  margin-top: 1rem;
 }
 nav a {
-  margin: 0 0.5rem;
-  color: var(--primary);
+  margin-right: 1rem;
   text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+nav a:hover {
+  color: var(--link-hover);
 }
 button {
   background: var(--primary);
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
+  border-radius: 5px;
   margin-top: 1rem;
+  cursor: pointer;
+}
+section {
+  margin-bottom: 3rem;
 }
 section h2 {
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.2rem;
+  border-left: 5px solid var(--primary);
+  padding-left: 0.6rem;
+  margin-bottom: 1rem;
 }
 .card {
   background: var(--card-bg);
   padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 1.2rem;
+  border-left: 4px solid var(--primary);
 }
-.skills-list, .contact-list {
-  list-style: none;
-  padding: 0;
-}
-.skills-list li, .contact-list li {
-  margin: 0.5rem 0;
+ul {
+  padding-left: 1.2rem;
 }
 footer {
   text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--primary);
   padding: 1rem 0;
-  border-top: 1px solid var(--fg);
+  margin-top: 2rem;
 }
 img {
   max-width: 100%;
-  display: block;
   margin-top: 0.5rem;
+  border-radius: 4px;
 }
-@media(max-width:600px) {
-  .profile-img {
-    width: 90px;
-    height: 90px;
-  }
-}
-
